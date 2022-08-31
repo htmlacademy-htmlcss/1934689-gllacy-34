@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Сливочное мороженое</title>
+</head>
+
+<body>
+    <!--Шапка страницы-->
+
+    <header class="page-header">
+
+        <!--Лого шапки-->
+
+
+        <div class="header-logo">
+            <a class="navigation-logo" href="index.html">
+
+            </a>
+        </div>
+
+        <!--Навигация шапки-->
+
+        <nav class="header-navigation">
+
+            <ul class="navigation-list">
+
+                <li class="navigation-item">
+                    <a class="navigation-link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="about.html">О компании</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Юзер бар-->
+
+        <div class="header-user">
+            <a class="navigation-phone" href="tel:+78005558628" aria-label="Телефон для заказа">
+                +7 800 555-86-28
+            </a>
+            <ul class="navigation-list nvigation-user">
+                <li class="user-item">
+                    <a class="search" href="#">
+                        <span class="visually-hidden">Поиск.</span>
+                    </a>
+                </li>
+                <li class="user-item">
+                    <a class="entries" href="#">
+                        <span class="entries-title">Вход</span>
+                    </a>
+                </li>
+                <li class="user-item">
+                    <a class="cart" href="#">
+                        <span class="cart-title">Корзина</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!--Основная страница каталога-->
+
+    <main class="main-inner">
+
+        <!--Хлебные крошки-->
+
+        <div class="breadcrambs">
+            <ul class="breadcrambs-list">
+                <li class="breadcrambs-item">
+                    <a class="breadcrambs-link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrambs-item">
+                    <a class="breadcrambs-link">Каталог</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Фильтр каталога-->
+
+        <section class="catalog-products">
+
+            <h2 class="catalog-products-title">Сливочное мороженое</h2>
+
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+                <!--Выпадающая сортировка-->
+
+                <div class="filter-data">
+
+                    <fieldset class="filter-data-item">
+
+                        <h3 class="filter-title">Сортировка:</h3>
+
+                        <select class="item-sort" name="sorting" multiple>
+                            <option value="popular">по популярности</option>
+                            <option value="price">по цене</option>
+                            <option value="calory">по калорийности</option>
+                        </select>
+
+                    </fieldset>
+                </div>
+                <!--фильтрр цены-->
+
+                <div class="price">
+                    <fieldset class="filter-range">
+
+                        <label class="range-price">
+                            <span>Цена:</span>
+                            <input class="price-select" type="number" value="100" name="min-price">
+                            <span>₽</span>
+                        </label>
+
+                        <label class="range-price">
+                            <span>-</span>
+                            <input class="price-select" type="number" value="500" name="max-price">
+                            <span>₽</span>
+                        </label>
+
+                    </fieldset>
+                </div>
+
+                <!---Фильтр колорий-->
+
+                <div class="colory">
+
+                    <fieldset class="filter-colory">
+
+                        <h3 class="colory-title">Жирность:</h3>
+                        <ul class="colory-list">
+                            <li class="colory-item">
+                                <label class="colory-zero">
+                                    <input class="colory-check" type="radio" value="0%" name="input-radio">
+                                    <span class="check-value">0%</span>
+                                </label>
+                            </li>
+                            <li class="colory-item">
+                                <label class="colory-ten">
+                                    <input class="colory-check" type="radio" value="до 10%" name="input-radio" checked>
+                                    <span class="check-value">до 10%</span>
+                                </label>
+                            </li>
+                            <li class="colory-item">
+                                <label class="colory-thirty">
+                                    <input class="colory-check" type="radio" value="до 30%" name="input-radio">
+                                    <span class="check-value">до 30%</span>
+                                </label>
+                            </li>
+                            <li class="colory-item">
+                                <label class="colory-thirty-up">
+                                    <input class="colory-check" type="radio" value="выше 30%" name="input-radio">
+                                    <span class="check-value">выше 30%</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <!--Фильтр наполнителей-->
+
+                <div class="filter-filler">
+                    <fieldset class="filler-components" aria-label="Фильтр по наполнителям">
+                        <h3 class="filter-filler-title">Наполнители:</h2>
+                            <ul class="filler-list">
+                                <li class="filler-item">
+                                    <label class="item-product">
+                                        <input class="ingredient" type="checkbox" name="chocolate" checked>
+                                        <span class="visualy-effect-checked"></span>
+                                        <span class="ingredient-title">шоколадные</span>
+                                    </label>
+                                </li>
+                                <li class="filler-item">
+                                    <label class="item-product">
+                                        <input class="ingredient" type="checkbox" name="chocolate" checked>
+                                        <span class="visualy-effect-checked"></span>
+                                        <span class="ingredient-title">сахарные посыпки</span>
+                                    </label>
+                                </li>
+                                <li class="filler-item">
+                                    <label class="item-product">
+                                        <input class="ingredient" type="checkbox" name="chocolate">
+                                        <span class="visualy-effect-checked"></span>
+                                        <span class="ingredient-title">фрукты</span>
+                                    </label>
+                                </li>
+                                <li class="filler-item">
+                                    <label class="item-product">
+                                        <input class="ingredient" type="checkbox" name="chocolate">
+                                        <span class="visualy-effect-checked"></span>
+                                        <span class="ingredient-title">сиропы</span>
+                                    </label>
+                                </li>
+                                <li class="filler-item">
+                                    <label class="item-product">
+                                        <input class="ingredient" type="checkbox" name="chocolate">
+                                        <span class="visualy-effect-checked"></span>
+                                        <span class="ingredient-title">джемы</span>
+                                    </label>
+                                </li>
+                            </ul>
+                    </fieldset>
+                </div>
+                <button class="filter-button">Применить</button>
+            </form>
+
+
+        </section>
+    </main>
+
+    <!--Подвал-->
+
+    <footer class="page-footer">
+
+        <!--Соц сети подвала-->
+
+        <div class="footer-social">
+            <ul class="footer-social-list">
+                <li class="social-item">
+                    <a class="social-link" href="https://t.me/htmlacademy">
+                        <span class="visully-hidden">Телеграм.</span>
+                    </a>
+                <li class="social-item">
+                    <a class="social-link" href="https://vk.com/htmlacademy">
+                        <span class="visully-hidden">Вконтакте.</span>
+                    </a>
+                <li class="social-item">
+                    <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                        <span class="visully-hidden">Ютуб.</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Для поставщиков -->
+
+        <div class="footer-suppliers">
+            <ul class="footer-suppliers-list">
+                <li class="suppliers-item">
+                    <span class="suppliers-title">Для поставщиков</span>
+                </li>
+                <li class="suppliers-item">
+                    <a class="documents" href="#">
+                        Наши документы
+                    </a>
+                </li>
+                <li class="suppliers-item">
+                    <a class="about-production" href="#">
+                        О производстве
+                    </a>
+                </li>
+                <li class="suppliers-item">
+                    <a class="environmental-standards" href="#">
+                        Экологические стандарты
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Лого подвала и копирайт-->
+
+        <div class="footer-logo">
+            <p class="footer-copyright">Сделанно в © 2022</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

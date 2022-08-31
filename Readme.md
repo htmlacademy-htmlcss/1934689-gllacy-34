@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Максим Рудой](https://up.htmlacademy.ru/htmlcss/34/user/1934689).
-* Наставник: `Неизвестно`.
+- Студент: [Максим Рудой](https://up.htmlacademy.ru/htmlcss/34/user/1934689).
+- Наставник: [Владислав Ермолаев] https://htmlacademy.ru/profile/id128353.
 
 ---
 
