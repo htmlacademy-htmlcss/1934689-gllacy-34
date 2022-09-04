@@ -71,433 +71,436 @@
 
     <main class="main-inner">
 
-      <!--Хлебные крошки-->
+      <div class="page-container">
 
-      <div class="breadcrambs">
-        <ul class="breadcrambs-list">
-          <li class="breadcrambs-item">
-            <a class="breadcrambs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrambs-item">
-            <a class="breadcrambs-link">Каталог</a>
-          </li>
-        </ul>
-      </div>
+        <!--Хлебные крошки-->
 
-      <!--Фильтр каталога-->
+        <div class="breadcrambs">
+          <ul class="breadcrambs-list">
+            <li class="breadcrambs-item">
+              <a class="breadcrambs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrambs-item">
+              <a class="breadcrambs-link">Каталог</a>
+            </li>
+          </ul>
+        </div>
 
-      <section class="catalog-products">
+        <!--Фильтр каталога-->
 
-        <h2 class="catalog-products-title">Сливочное мороженое</h2>
+        <section class="catalog-products">
 
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="catalog-products-title">Сливочное мороженое</h2>
 
-          <!--Выпадающая сортировка-->
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-          <div class="filter-data">
+            <!--Выпадающая сортировка-->
 
-            <fieldset class="filter-data-item">
+            <div class="filter-data">
 
-              <h3 class="filter-title">Сортировка:</h3>
+              <fieldset class="filter-data-item">
 
-              <select class="item-sort" name="sorting" multiple>
-                <option value="popular">по популярности</option>
-                <option value="price">по цене</option>
-                <option value="calory">по калорийности</option>
-              </select>
+                <h3 class="filter-title">Сортировка:</h3>
 
-            </fieldset>
-          </div>
-          <!--фильтрр цены-->
+                <select class="item-sort" name="sorting" multiple>
+                  <option value="popular">по популярности</option>
+                  <option value="price">по цене</option>
+                  <option value="calory">по калорийности</option>
+                </select>
 
-          <div class="price">
-            <fieldset class="filter-range">
+              </fieldset>
+            </div>
+            <!--фильтрр цены-->
 
-              <label class="range-price">
-                <span>Цена:</span>
-                <input class="price-select" type="number" value="100" name="min-price">
-                <span>₽</span>
-              </label>
+            <div class="price">
+              <fieldset class="filter-range">
 
-              <label class="range-price">
-                <span>-</span>
-                <input class="price-select" type="number" value="500" name="max-price">
-                <span>₽</span>
-              </label>
+                <label class="range-price">
+                  <span>Цена:</span>
+                  <input class="price-select" type="number" value="100" name="min-price">
+                  <span>₽</span>
+                </label>
 
-            </fieldset>
-          </div>
+                <label class="range-price">
+                  <span>-</span>
+                  <input class="price-select" type="number" value="500" name="max-price">
+                  <span>₽</span>
+                </label>
 
-          <!---Фильтр колорий-->
+              </fieldset>
+            </div>
 
-          <div class="colory">
+            <!---Фильтр колорий-->
 
-            <fieldset class="filter-colory">
+            <div class="colory">
 
-              <h3 class="colory-title">Жирность:</h3>
-              <ul class="colory-list">
-                <li class="colory-item">
-                  <label class="colory-zero">
-                    <input class="colory-check" type="radio" value="0%" name="input-radio">
-                    <span class="check-value">0%</span>
-                  </label>
-                </li>
-                <li class="colory-item">
-                  <label class="colory-ten">
-                    <input class="colory-check" type="radio" value="до 10%" name="input-radio" checked>
-                    <span class="check-value">до 10%</span>
-                  </label>
-                </li>
-                <li class="colory-item">
-                  <label class="colory-thirty">
-                    <input class="colory-check" type="radio" value="до 30%" name="input-radio">
-                    <span class="check-value">до 30%</span>
-                  </label>
-                </li>
-                <li class="colory-item">
-                  <label class="colory-thirty-up">
-                    <input class="colory-check" type="radio" value="выше 30%" name="input-radio">
-                    <span class="check-value">выше 30%</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+              <fieldset class="filter-colory">
 
-          <!--Фильтр наполнителей-->
-
-          <div class="filter-filler">
-            <fieldset class="filler-components" aria-label="Фильтр по наполнителям">
-              <h3 class="filter-filler-title">Наполнители:</h2>
-                <ul class="filler-list">
-                  <li class="filler-item">
-                    <label class="item-product">
-                      <input class="ingredient" type="checkbox" name="chocolate" checked>
-                      <span class="visualy-effect-checked"></span>
-                      <span class="ingredient-title">шоколадные</span>
+                <h3 class="colory-title">Жирность:</h3>
+                <ul class="colory-list">
+                  <li class="colory-item">
+                    <label class="colory-zero">
+                      <input class="colory-check" type="radio" value="0%" name="input-radio">
+                      <span class="check-value">0%</span>
                     </label>
                   </li>
-                  <li class="filler-item">
-                    <label class="item-product">
-                      <input class="ingredient" type="checkbox" name="chocolate" checked>
-                      <span class="visualy-effect-checked"></span>
-                      <span class="ingredient-title">сахарные посыпки</span>
+                  <li class="colory-item">
+                    <label class="colory-ten">
+                      <input class="colory-check" type="radio" value="до 10%" name="input-radio" checked>
+                      <span class="check-value">до 10%</span>
                     </label>
                   </li>
-                  <li class="filler-item">
-                    <label class="item-product">
-                      <input class="ingredient" type="checkbox" name="chocolate">
-                      <span class="visualy-effect-checked"></span>
-                      <span class="ingredient-title">фрукты</span>
+                  <li class="colory-item">
+                    <label class="colory-thirty">
+                      <input class="colory-check" type="radio" value="до 30%" name="input-radio">
+                      <span class="check-value">до 30%</span>
                     </label>
                   </li>
-                  <li class="filler-item">
-                    <label class="item-product">
-                      <input class="ingredient" type="checkbox" name="chocolate">
-                      <span class="visualy-effect-checked"></span>
-                      <span class="ingredient-title">сиропы</span>
-                    </label>
-                  </li>
-                  <li class="filler-item">
-                    <label class="item-product">
-                      <input class="ingredient" type="checkbox" name="chocolate">
-                      <span class="visualy-effect-checked"></span>
-                      <span class="ingredient-title">джемы</span>
+                  <li class="colory-item">
+                    <label class="colory-thirty-up">
+                      <input class="colory-check" type="radio" value="выше 30%" name="input-radio">
+                      <span class="check-value">выше 30%</span>
                     </label>
                   </li>
                 </ul>
-            </fieldset>
+              </fieldset>
+            </div>
+
+            <!--Фильтр наполнителей-->
+
+            <div class="filter-filler">
+              <fieldset class="filler-components" aria-label="Фильтр по наполнителям">
+                <h3 class="filter-filler-title">Наполнители:</h2>
+                  <ul class="filler-list">
+                    <li class="filler-item">
+                      <label class="item-product">
+                        <input class="ingredient" type="checkbox" name="chocolate" checked>
+                        <span class="visualy-effect-checked"></span>
+                        <span class="ingredient-title">шоколадные</span>
+                      </label>
+                    </li>
+                    <li class="filler-item">
+                      <label class="item-product">
+                        <input class="ingredient" type="checkbox" name="chocolate" checked>
+                        <span class="visualy-effect-checked"></span>
+                        <span class="ingredient-title">сахарные посыпки</span>
+                      </label>
+                    </li>
+                    <li class="filler-item">
+                      <label class="item-product">
+                        <input class="ingredient" type="checkbox" name="chocolate">
+                        <span class="visualy-effect-checked"></span>
+                        <span class="ingredient-title">фрукты</span>
+                      </label>
+                    </li>
+                    <li class="filler-item">
+                      <label class="item-product">
+                        <input class="ingredient" type="checkbox" name="chocolate">
+                        <span class="visualy-effect-checked"></span>
+                        <span class="ingredient-title">сиропы</span>
+                      </label>
+                    </li>
+                    <li class="filler-item">
+                      <label class="item-product">
+                        <input class="ingredient" type="checkbox" name="chocolate">
+                        <span class="visualy-effect-checked"></span>
+                        <span class="ingredient-title">джемы</span>
+                      </label>
+                    </li>
+                  </ul>
+              </fieldset>
+            </div>
+            <button class="filter-button">Применить</button>
+          </form>
+
+          <div class="catalog-products-container">
+
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+            <div class="product-card">
+
+              <h3 class="card-title">
+                <a class="card-link" href="#">Малинка</a>
+              </h3>
+              <a class="card-img-link" href="#">
+                <img class="card-img" src="#" width="168" height="168" alt>
+              </a>
+            </div>
+
+            <p class="card-description">Сливочное мороженное с малиновым джемом</p>
+            <div class="card-price-cart">
+              <b class="card-price">
+                310
+                <span class="price-value">
+                  ₽/кг
+                </span>
+              </b>
+              <button class="card-button" type="button"></button>
+              <span class="visually-hidden">Заказать.</span>
+            </div>
+
           </div>
-          <button class="filter-button">Применить</button>
-        </form>
 
-        <div class="catalog-products-container">
-
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
+          <div class="catalog-container-bottom">
+            <button class="button-showmore" type="button">Показать ещё</button>
+            <div class="catalog-pagination">
+              <a class="pagination-prew" href="#">
+                <span class="visually-hidden">Предыдущая страница.</span>
+              </a>
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">5</a>
+                </li>
+              </ul>
+              <a class="pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница.</span>
+              </a>
+            </div>
           </div>
 
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-          <div class="product-card">
-
-            <h3 class="card-title">
-              <a class="card-link" href="#">Малинка</a>
-            </h3>
-            <a class="card-img-link" href="#">
-              <img class="card-img" src="#" width="168" height="168" alt>
-            </a>
-          </div>
-
-          <p class="card-description">Сливочное мороженное с малиновым джемом</p>
-          <div class="card-price-cart">
-            <b class="card-price">
-              310
-              <span class="price-value">
-                ₽/кг
-              </span>
-            </b>
-            <button class="card-button" type="button"></button>
-            <span class="visually-hidden">Заказать.</span>
-          </div>
-
-        </div>
-
-        <div class="catalog-container-bottom">
-          <button class="button-showmore" type="button">Показать ещё</button>
-          <div class="catalog-pagination">
-            <a class="pagination-prew" href="#">
-              <span class="visually-hidden">Предыдущая страница.</span>
-            </a>
-            <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">5</a>
-              </li>
-            </ul>
-            <a class="pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница.</span>
-            </a>
-          </div>
-        </div>
-
-      </section>
+        </section>
+      </div>
     </main>
 
     <!--Подвал-->

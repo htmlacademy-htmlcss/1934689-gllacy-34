@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 1366px;
+  min-width: 1170px;
+  margin: 0 auto;
+  background-color: #feafc3;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 104px;
+}
+
+/* левая часть шапки*/
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*логотип шапки*/
+
+.header-logo {
+  display: block;
+  margin-right: 32px;
+}
+
+.header-logo:hover {
+  opacity: 0.6;
+}
+
+.header-logo:focus {
+  opacity: 0.3;
+}
+
+/*навигация шапки*/
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation-link {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d3440;
+  text-decoration: none;
+  padding: 8px 16px;
+  outline: none;
+}
+
+/*выбранная страница*/
+
+.current-page {
+  background-color: #ff4a78;
+  border-radius: 30px;
+  color: #fcfcfc;
+}
+
+.navigation-link:hover {
+  background: rgba(252, 252, 252, 0.5);
+  border-radius: 30px;
+}
+
+.navigation-link:focus {
+  outline: auto;
+  border-radius: 30px;
+}
+
+.navigation-link:active {
+  background: #fcfcfc;
+  border-radius: 30px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 32px;
+}
+
+/*правая часть шапки */
+
+.header-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*телефон шапки*/
+
+.header-phone {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2d3440;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.header-phone:hover {
+  opacity: 0.6;
+}
+
+/*поиск шапки*/
+
+.header-search {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 27px;
+  cursor: pointer;
+  border: none;
+  margin-right: 16px;
+}
+
+/*иконка поиска*/
+
+.header-search .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/*выбранны посик */
+
+.search-current {
+  background: #ff4a78;
+  border-radius: 30px;
+  color: #fcfcfc;
+}
+
+.header-search:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.header-search:focus {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid #2d3440;
+  border-radius: 27px;
+}
+
+.header-search:active {
+  background: #fcfcfc;
+  border-radius: 27px;
+}
+
+/*логин шапки*/
+
+.header-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 88px;
+  height: 32px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2d3440;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 27px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 6px 16px;
+  margin-right: 16px;
+}
+
+/*иконка логин */
+
+.header-login .icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+}
+
+/*выбранная кнопка*/
+
+.login-current {
+  background: #ff4a78;
+  border-radius: 30px;
+  color: #fcfcfc;
+}
+
+.header-login:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.header-login:focus {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid #000000;
+  border-radius: 30px;
+}
+
+.header-login:active {
+  background: #fcfcfc;
+}
+
+/*корзина шапки */
+
+.header-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2d3440;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 27px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 6px 16px;
+}
+
+/*иконка карзины */
+
+.header-cart .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.header-cart:hover {
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.header-cart:focus {
+  background: rgba(252, 252, 252, 0.5);
+  border: 2px solid #000000;
+}
+
+.header-cart:active {
+  background: #fcfcfc;
+}
+
+/*подвал */
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 104px;
+}
+
+/*социадьные сети*/
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  max-width: 104px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #fcfcfc;
+  border: 2px solid #fec7d5;
+  border-radius: 50%;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.icon:hover {
+  background-color: #000000;
+}
+
+.icon:focus {
+  background-color: #957282;
+  outline: none;
+}
+
+.icon:active {
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+
+/*для поставщиков*/
+
+.footer-suppliers-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2d3440;
+}
+
+.suppliers-item:nth-child(1) {
+  position: relative;
+  font-weight: 700;
+}
+
+.suppliers-item:nth-child(1)::before {
+  position: absolute;
+  content: url("../images/heart-ico.svg");
+  top: 5%;
+  transform: translateX(-160%);
+}
+
+.footer-suppliers-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.suppliers-item {
+  width: 50%;
+}
+
+.suppliers-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.suppliers-item:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.suppliers-item:hover {
+  opacity: 0.6;
+}
+
+/*логотип и копирайт */
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 195px;
+}
+
+.footer-copyright {
+  margin-top: 18px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #2d3440;
+}
+
+.copyright-link {
+  color: #000000;
+}
+
+.copyright-link:hover {
+  opacity: 0.6;
+}
