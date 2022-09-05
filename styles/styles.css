@@ -568,7 +568,7 @@ body {
 
 .suppliers-item:nth-child(1)::before {
   position: absolute;
-  content: url("../images/heart-ico.svg");
+  content: url("../images/footer/heart-ico.svg");
   top: 5%;
   transform: translateX(-160%);
 }
