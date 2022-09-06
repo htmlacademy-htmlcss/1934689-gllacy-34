@@ -281,10 +281,13 @@ body {
   list-style: none;
 }
 
-.main-slider {
+.main-slider .container {
   display: grid;
   grid-template-columns: 561px 1fr;
+  margin-bottom: 80px;
 }
+
+/*описание продукта*/
 
 .slider-description-list {
   grid-row: 1/3;
@@ -328,6 +331,8 @@ body {
   display: block;
 }
 
+/*кнопка заказать*/
+
 .slider-button {
   font-family: inherit;
   font-weight: 700;
@@ -363,6 +368,8 @@ body {
   background-color: #e7e7e7;
   outline: 4px solid rgba(252, 252, 252, 0.4);
 }
+
+/*пагинация слайдера*/
 
 .slider-pagination-list {
   grid-row: 3/5;
@@ -403,11 +410,15 @@ body {
   border: 1px solid #000000;
 }
 
+/*фото слайда*/
+
 .slider-photo-list {
   display: grid;
   grid-template-columns: 1fr 100px 100px;
   column-gap: 48px;
 }
+
+/*кнопки пролистывания слайда*/
 
 .slider-prew {
   position: absolute;
@@ -442,6 +453,8 @@ body {
   cursor: pointer;
 }
 
+/*фото продукта*/
+
 .slider-toggle:hover {
   background-color: #fcfcfc;
 }
@@ -472,6 +485,8 @@ body {
   opacity: 0.4;
 }
 
+/*активный  слайд*/
+
 .current-slider {
   transform: none;
   opacity: 1;
@@ -495,6 +510,8 @@ body {
   opacity: 1;
 }
 
+/*социальные сети слайда*/
+
 .slider-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -502,6 +519,256 @@ body {
   min-width: 104px;
 }
 
+/*секция подарков*/
+
+.main-prezent-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+  margin: 0 33%;
+  min-width: 434px;
+  margin-bottom: 55px;
+}
+
+/*обертка подарков*/
+
+.main-prezent .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+/*подарок левый*/
+
+.prezent-left {
+  max-width: 570px;
+  background: #ff7799;
+  border-radius: 16px;
+  padding: 36px;
+  background-image: url("../images/prezents/raspberry-prezent.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/*название*/
+
+.prezent-left-title {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 199px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+  margin-bottom: 28px;
+}
+
+/*описание*/
+
+.prezent-left-discription {
+  width: 66%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  margin-bottom: 28px;
+}
+
+/*подарок правый*/
+
+.prezent-right {
+  max-width: 570px;
+  background: #ff7799;
+  border-radius: 16px;
+  padding: 36px;
+  background-image: url("../images/prezents/marshmallow-prezent.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/*названеие*/
+
+.prezent-right-title {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 254px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+  margin-bottom: 28px;
+}
+
+/*описание*/
+
+.prezent-right-discription {
+  width: 66%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d3440;
+  margin-bottom: 28px;
+}
+
+/*кнопка для заказа подарка*/
+
+.prezent-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  background-color: #fcfcfc;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgb(45 52 64 / 10%);
+  border-radius: 26px;
+  padding: 12px 32px;
+  cursor: pointer;
+}
+
+.prezent-button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 4px solid rgba(252, 252, 252, 1);
+}
+.prezent-button:focus {
+  background-color: rgba(252, 252, 252, 1);
+  outline: 4px solid #000000;
+}
+
+.prezent-button:active {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline: 4px solid #000000;
+}
+
+.prezent-button:disabled {
+  background-color: #e7e7e7;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+}
+
+/*секция популярное */
+
+.main-popular .container {
+  margin-bottom: 80px;
+}
+
+.main-popular-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+  margin: 0 25%;
+  min-width: 527px;
+  margin-bottom: 107px;
+}
+
+.popular-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fcfcfc;
+  border-radius: 8px;
+  max-width: 270px;
+  padding: 0 28px 40px 28px;
+}
+
+.popular-product-card a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.card-img-link {
+}
+.card-img {
+  display: block;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-top: -52px;
+  margin-bottom: 16px;
+}
+
+.card-product-title {
+  margin-bottom: 8px;
+}
+
+.card-product-discription {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #565c66;
+  margin-bottom: 20px;
+}
+
+.card-product-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 200px;
+}
+
+.card-product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  box-sizing: border-box;
+  background-color: #ff2f64;
+  border: 2px solid #ff2f64;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cart-card-price {
+  width: 14px;
+  height: 14px;
+}
+
+.product-price {
+  justify-content: flex-start;
+}
 /*подвал */
 
 .footer .container {
