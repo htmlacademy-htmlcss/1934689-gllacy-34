@@ -716,14 +716,25 @@ body {
   text-decoration: none;
 }
 
-.card-img-link {
-}
 .card-img {
   display: block;
   object-fit: contain;
   border-radius: 50%;
   margin-top: -52px;
   margin-bottom: 16px;
+}
+
+.card-product-link:hover {
+  padding: 8px 16px;
+  background-color: #ffcbd8;
+  border-radius: 30px;
+}
+
+.card-product-link:focus {
+  padding: 7px 15px;
+  background-color: #ffcbd8;
+  border: 2px solid #000000;
+  border-radius: 30px;
 }
 
 .card-product-title {
@@ -746,7 +757,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  max-width: 200px;
+  min-width: 200px;
 }
 
 .card-product-button {
@@ -759,6 +770,33 @@ body {
   border: 2px solid #ff2f64;
   border-radius: 50%;
   cursor: pointer;
+}
+.cart-card-price {
+  fill: #fcfcfc;
+}
+
+.card-product-button:hover {
+  background-color: #fcfcfc;
+  border: 2px solid #ff2f64;
+}
+
+.card-product-button:hover .cart-card-price {
+  fill: #000000;
+}
+
+.card-product-button:focus {
+  background-color: #ff2f64;
+  border: 2px solid #000000;
+}
+
+.card-product-button:active {
+  background-color: #ffcbd8;
+  border: 2px solid #ff2f64;
+}
+
+.card-product-button:disabled {
+  background-color: #b9b9b9;
+  border: 2px solid #b9b9b9;
 }
 
 .cart-card-price {
@@ -780,38 +818,142 @@ body {
 
 /*социадьные сети*/
 
-.footer-social-list {
+.social-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   list-style: none;
-  max-width: 104px;
 }
 
-.icon-footer {
-  width: 24px;
-  height: 24px;
-  color: #fcfcfc;
+.social-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-clip: content-box;
   border: 2px solid #fec7d5;
   border-radius: 50%;
+}
+
+.icon-social {
+  width: 24px;
+  height: 24px;
+  fill: #fcfcfc;
 }
 
 .social-item:not(:last-child) {
   margin-right: 16px;
 }
 
-.icon-footer:hover {
-  background-color: #000000;
+.social__link:hover {
+  border: 2px solid rgba(252, 252, 252, 0.5);
 }
 
-.icon-footer:focus {
-  background-color: #957282;
-  outline: none;
+.social-link:hover::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  z-index: -1;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
 }
 
-.icon-footer:active {
-  background-color: #000000;
+.social-link:focus {
   border: 2px solid #000000;
+}
+
+.social-link:active {
+  border: 2px solid rgba(252, 252, 252, 0.5);
+}
+
+.social-link:active::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  z-index: -1;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+/*секция особенностей*/
+
+.main-features .container {
+  padding: 24px;
+  box-sizing: border-box;
+  margin-bottom: 86px;
+  background: url("../images/features/waffle-tile.jpg");
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.features-wrapper {
+  min-width: 1122px;
+  padding: 56px 40px;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  border-radius: 16px;
+}
+
+.main-features-title {
+  min-width: 995px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #2d3440;
+  margin-bottom: 56px;
+}
+
+.features-description-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 988px;
+  list-style: none;
+}
+
+.description-item {
+  position: relative;
+  width: 50%;
+  padding-left: 65px;
+}
+
+.ice-cream::before {
+  position: absolute;
+  left: 6px;
+  content: url("../images/features/ice-cream.png");
+}
+.ingridients::before {
+  position: absolute;
+  left: 6px;
+  content: url("../images/features/leaf.png");
+}
+.milk::before {
+  position: absolute;
+  left: 6px;
+  content: url("../images/features/cow.png");
+}
+.delivery::before {
+  position: absolute;
+  left: 6px;
+  content: url("../images/features/thermometer.png");
+}
+
+.description-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.description-item:nth-child(3) {
+  margin: 0;
 }
 
 /*для поставщиков*/
