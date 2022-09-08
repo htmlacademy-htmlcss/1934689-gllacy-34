@@ -275,7 +275,7 @@ body {
 
 /* основная страница */
 
-/*слайдер*/
+/* секция слайдер*/
 
 .main-slider ul {
   list-style: none;
@@ -554,7 +554,7 @@ body {
   background: #ff7799;
   border-radius: 16px;
   padding: 36px;
-  background-image: url("../images/prezents/raspberry-prezent.png");
+  background-image: url("../images/main/prezents/raspberry-prezent.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -594,7 +594,7 @@ body {
   background: #ff7799;
   border-radius: 16px;
   padding: 36px;
-  background-image: url("../images/prezents/marshmallow-prezent.png");
+  background-image: url("../images/main/prezents/marshmallow-prezent.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -807,6 +807,545 @@ body {
 .product-price {
   justify-content: flex-start;
 }
+
+/*секция особенностей*/
+
+.main-features .container {
+  padding: 24px;
+  box-sizing: border-box;
+  margin-bottom: 86px;
+  background: url("../images/main/features/waffle-tile.jpg");
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.features-wrapper {
+  min-width: 1122px;
+  padding: 56px 40px;
+  box-sizing: border-box;
+  background-color: #fcfcfc;
+  border-radius: 16px;
+}
+
+.main-features-title {
+  min-width: 995px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #2d3440;
+  margin-bottom: 56px;
+}
+
+.features-description-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 988px;
+  list-style: none;
+}
+
+.discription-item {
+  position: relative;
+  width: 50%;
+  padding-left: 65px;
+}
+
+.ice-cream::before {
+  position: absolute;
+  left: 6px;
+  content: url("../images/main/features/ice-cream.png");
+}
+.ingridients::before {
+  position: absolute;
+  left: 6px;
+  content: url("../images/main/features/leaf.png");
+}
+.milk::before {
+  position: absolute;
+  left: 6px;
+  content: url("../images/main/features/cow.png");
+}
+.delivery::before {
+  position: absolute;
+  left: 6px;
+  content: url("../images/main/features/thermometer.png");
+}
+
+.discription-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.discription-item:nth-child(3) {
+  margin: 0;
+}
+
+/*секция новостей и подписки */
+
+.main-news-subscription .container {
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*левая часть секции*/
+
+.main-news {
+  background-color: #fcfcfc;
+  color: #000000;
+  border-radius: 16px;
+  max-width: 570px;
+  padding: 32px 235px 67px 32px;
+  background-image: url("../images/main/news/news.png");
+  background-repeat: no-repeat;
+  background-size: 620px;
+  background-position-x: 20px;
+  background-position-y: -94px;
+}
+
+.main-news-title {
+  margin-bottom: 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565c66;
+}
+
+.main-news-link {
+  display: block;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.main-news-link:hover {
+  opacity: 0.6;
+}
+
+.main-news-link:focus {
+  border: 1px solid #000000;
+}
+
+.main-news-link:active {
+  opacity: 1;
+}
+
+/*правая часть секции*/
+
+.subscription {
+  background-color: #fcfcfc;
+  color: #000000;
+  border-radius: 16px;
+  max-width: 570px;
+  background-image: url("../images/news/subscription.png");
+  padding: 6px;
+}
+
+.subscription-wrapper {
+  background-color: #fcfcfc;
+  color: #000000;
+  border-radius: 16px;
+  max-width: 558px;
+  padding: 26px;
+}
+
+.subscription-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
+  margin-bottom: 44px;
+}
+
+.subscription-form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 14px;
+}
+
+.subscription-input {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  flex-grow: 1;
+  align-self: center;
+  background: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  padding: 14px;
+}
+
+.subscription-input::placeholder {
+  color: #b9b9b9;
+}
+
+/* .subscription-input:invalid {
+  border: 2px solid #ea5454;
+} */
+
+.subscription-input:hover {
+  padding: 14px;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+/* .subscription-input:invalid:hover {
+  padding: 14px;
+  color: #000000;
+  border: 2px solid #ea5454;
+} */
+
+.subscription-input:focus {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.subscription-input:disabled {
+  background-color: #e7e7e7;
+  border: 1px solid #b9b9b9;
+  opacity: 0.65;
+}
+
+.subscription-button {
+  display: inline-block;
+  color: #fcfcfc;
+  background-color: #ff2f64;
+  box-shadow: 0 4px 12px #2d34401a;
+  border: 4px solid #ff2f644d;
+  cursor: pointer;
+  background-clip: padding-box;
+  border-radius: 26px;
+  padding: 12px 32px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.subscription-button:hover {
+  color: #000000;
+  background-color: #fcfcfc;
+}
+
+.subscription-button:focus {
+  color: #fcfcfc;
+  background-color: #ff2f64;
+  border: 4px solid #000000;
+}
+
+.subscription-button:focus {
+  color: #fcfcfc;
+  background-color: #feafc3;
+  border: 4px solid #000000;
+}
+
+.subscription-button:disabled {
+  font-weight: 400;
+  color: #565c66;
+  background-color: #b9b9b9;
+  border: 4px solid #b9b9b94d;
+  cursor: default;
+}
+
+/*секция доставки*/
+
+.main-delivery .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfcfc;
+  border-radius: 16px;
+  margin-bottom: 80px;
+  padding: 64px 64px 64px 100px;
+  background-image: url("../images/main/delivery/delivery.png");
+  background-repeat: no-repeat;
+  background-position: top -147px right -100px;
+  background-size: 1254px;
+}
+
+.delivery-wrapper {
+  max-width: 371px;
+}
+
+.main-delivery-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2d3440;
+  margin-bottom: 24px;
+}
+
+.main-delivery-subscription {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
+}
+
+.delivery-data {
+  max-width: 500px;
+  padding: 40px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+}
+
+.delivery-data-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
+  margin-bottom: 32px;
+}
+
+.delivery-data-form {
+  display: grid;
+  grid-template-columns: 116px 286px;
+  gap: 16px 16px;
+  align-items: flex-end;
+}
+
+.form-date {
+  min-width: 117px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.date-input {
+  max-width: 117px;
+  padding: 14px;
+  margin-top: 8px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.form-telephone {
+  min-width: 287px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.telephone-input {
+  min-width: 287px;
+  padding: 14px;
+  margin-top: 8px;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.form-adress {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.adress-input {
+  min-width: 420px;
+  padding: 14px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+.data-form-button {
+  grid-column: 1/-1;
+  display: inline-block;
+  max-width: 152px;
+  margin: 0 auto;
+  padding: 12px 32px;
+  background-clip: padding-box;
+  border-radius: 26px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #ff2f64;
+  box-shadow: 0 4px 12px #2d34401a;
+  border: 4px solid #ff2f644d;
+  cursor: pointer;
+}
+
+.data-form-button:hover {
+  color: #2d3440;
+  background-color: #fcfcfc4d;
+  border: 4px solid #ff2f64;
+}
+
+.data-form-button:focus {
+  padding: 14px 34px;
+  background-color: #ff2f64;
+  border: 2px solid #2d3440;
+}
+
+.data-form-button:disabled {
+  font-weight: 400;
+  color: #565c66;
+  background-color: #b9b9b9;
+  border: 4px solid #b9b9b94d;
+  cursor: default;
+}
+
+.data-form-button:active {
+  padding: 14px 34px;
+  background-color: #feafc3;
+  border: 2px solid #2d3440;
+}
+
+.delivery-data-form input:hover {
+  padding: 14px;
+  border: 1px solid #2d3440;
+}
+
+.delivery-data-form input:focus {
+  padding: 13px;
+  border: 2px solid #2d3440;
+}
+
+/*секция адрес магазина*/
+
+.main-adress .container {
+  background-image: url("../images/main/adress/adress.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -98px right;
+  padding: 64px;
+  border-radius: 16px;
+}
+
+.adress-wrapper {
+  max-width: 343px;
+  padding: 40px;
+  background-color: #fcfcfc;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.adress-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565c66;
+  margin-bottom: 12px;
+}
+
+.adress-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+  margin-bottom: 24px;
+}
+
+.adress-tel {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2d3440;
+  text-decoration: none;
+}
+
+.adress-tel:hover {
+  opacity: 0.6;
+}
+
+.adress-tel:active {
+  opacity: 0.4;
+}
+
+.adress-note {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565c66;
+  margin-bottom: 32px;
+}
+
+.adress-button {
+  display: inline-block;
+  padding: 12px 32px;
+  background-clip: padding-box;
+  border-radius: 26px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #ff2f64;
+  box-shadow: 0 4px 12px #2d34401a;
+  border: 4px solid #ff2f644d;
+  cursor: pointer;
+}
+
+.adress-button:hover {
+  color: #2d3440;
+  background-color: #fcfcfc4d;
+  border: 4px solid #ff2f64;
+}
+
+.adress-button:focus {
+  padding: 14px 33px;
+  background-color: #ff2f64;
+  border: 2px solid #2d3440;
+}
+
+.adress-button:active {
+  padding: 14px 33px;
+  background-color: #feafc3;
+  border: 2px solid #2d3440;
+}
+
 /*подвал */
 
 .footer .container {
@@ -879,81 +1418,6 @@ body {
   height: 20px;
   background-color: #000000;
   border-radius: 50%;
-}
-
-/*секция особенностей*/
-
-.main-features .container {
-  padding: 24px;
-  box-sizing: border-box;
-  margin-bottom: 86px;
-  background: url("../images/features/waffle-tile.jpg");
-  background-color: #ffffff;
-  border-radius: 16px;
-}
-
-.features-wrapper {
-  min-width: 1122px;
-  padding: 56px 40px;
-  box-sizing: border-box;
-  background-color: #fcfcfc;
-  border-radius: 16px;
-}
-
-.main-features-title {
-  min-width: 995px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-  text-align: center;
-  color: #2d3440;
-  margin-bottom: 56px;
-}
-
-.features-description-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  max-width: 988px;
-  list-style: none;
-}
-
-.description-item {
-  position: relative;
-  width: 50%;
-  padding-left: 65px;
-}
-
-.ice-cream::before {
-  position: absolute;
-  left: 6px;
-  content: url("../images/features/ice-cream.png");
-}
-.ingridients::before {
-  position: absolute;
-  left: 6px;
-  content: url("../images/features/leaf.png");
-}
-.milk::before {
-  position: absolute;
-  left: 6px;
-  content: url("../images/features/cow.png");
-}
-.delivery::before {
-  position: absolute;
-  left: 6px;
-  content: url("../images/features/thermometer.png");
-}
-
-.description-item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.description-item:nth-child(3) {
-  margin: 0;
 }
 
 /*для поставщиков*/
