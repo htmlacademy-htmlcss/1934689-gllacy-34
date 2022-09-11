@@ -11,24 +11,25 @@
 
   <body>
     <h1 class="visually-hidden">интернет магазин мороженного</h1>
-    <!--Шапка страницы-->
+
+    <!--header-->
 
     <header class="header">
 
       <div class="container">
 
-        <!--Навигация шапки-->
+        <!--header navigation-->
 
         <div class="header-navigation">
 
-          <!--Лого шапки-->
+          <!--header logo-->
 
           <a class="header-logo" href="index.html">
             <img class="logo-img" src="./images/header/header-logo.svg" alt="логотип магазина Глейси" width="137"
               height="55">
           </a>
 
-          <!--левая часть шапки-->
+          <!--header left part -->
 
           <nav class="header-navigation">
 
@@ -49,7 +50,7 @@
           </nav>
         </div>
 
-        <!--правая часть шапки-->
+        <!--header right part-->
 
         <div class="header-user">
           <a class="header-phone" href="tel:+78005558628" aria-label="Телефон для заказа">
@@ -84,28 +85,25 @@
       </div>
     </header>
 
-    <!--оснавная страница-->
+    <!--main-->
 
-    <main class="main-index">
+    <main class="index">
 
+      <!--slider -->
 
-
-
-      <!--Сладйер -->
-
-      <!--Выбраный слайдер 1-->
+      <!--current slider -->
 
       <h1 class="visually-hidden">
         интернет магазин мороженного "Глейси"
       </h1>
 
-      <section class="main-slider">
+      <section class="slider">
 
         <div class="container">
 
           <h2 class="visually-hidden">Выбор мороженного</h2>
 
-          <!--описание продукта-->
+          <!--product description-->
 
           <ul class="slider-description-list">
 
@@ -147,7 +145,7 @@
 
           </ul>
 
-          <!--Слайдер пагинация-->
+          <!--slider pagination-->
 
           <ol class="slider-pagination-list">
             <li class="pagination-item ">
@@ -168,7 +166,7 @@
 
           </ol>
 
-          <!--фото продукта -->
+          <!--product photo -->
 
           <ul class="slider-photo-list">
             <li class="photo-item current-slider">
@@ -197,7 +195,7 @@
 
 
 
-          <!--Слайдер социальные сети-->
+          <!--slider social list-->
 
           <ul class="slider-social-list">
             <li class="social-item">
@@ -227,48 +225,50 @@
       </section>
 
 
-      <!--Подарки-->
+      <!--prezents-->
 
 
 
-      <section class="main-prezent">
+      <section class="prezent">
 
-        <h2 class="main-prezent-title">Заказывайте мороженое и получайте подарки!</h2>
+        <h2 class="prezent-title">Заказывайте мороженое и получайте подарки!</h2>
 
-        <div class="container">
+        <ul class="container">
 
-          <div class="prezent-left">
+          <li class="prezent-left">
             <h3 class="prezent-left-title">Малинка даром!</h3>
-            <p class="prezent-left-discription">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
+            <p class="prezent-left-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
               банку малинового варенья бесплатно.</p>
             <a class="prezent-button" href="#">Хочу подарок</a>
 
-          </div>
-          <div class="prezent-right">
+          </li>
+          <li class="prezent-right">
             <h3 class="prezent-right-title">Маршмеллоу даром!</h3>
-            <p class="prezent-right-discription">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
+            <p class="prezent-right-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
               зефирок совершенно бесплатно.</p>
             <a class="prezent-button" href="#">Хочу подарок</a>
 
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
 
 
-      <!--Популярное-->
+      <!--popular-->
 
 
 
-      <section class="main-popular">
+      <section class="popular">
+
+        <h2 class="visually-hidden">popular product.</h2>
 
         <div class="container">
 
-          <h3 class="main-popular-title">Попробуйте самые популярные вкусы нашего мороженого</h3>
+          <h3 class="popular-title">Попробуйте самые популярные вкусы нашего мороженого</h3>
 
-          <div class="popular-product">
+          <ul class="popular-product">
 
-            <div class="popular-product-card">
+            <li class="popular-product-card">
               <a class="card-img-link" href="#">
                 <img class="card-img" src="./images/main/popular/raspberry-popular.jpg" width="168" height="168"
                   alt="Малининовое мороженое.">
@@ -277,7 +277,7 @@
                 <a class="card-product-link" href="#">Малинка</a>
               </h4>
 
-              <p class="card-product-discription">Сливочное мороженое с малиновым джемом</p>
+              <p class="card-product-description">Сливочное мороженое с малиновым джемом</p>
               <div class="card-product-price">
                 <b class="product-price">310 ₽/кг</b>
                 <button class="card-product-button" type="button">
@@ -287,9 +287,9 @@
                   <span class="visually-hidden">Заказать.</span>
                 </button>
               </div>
-            </div>
+            </li>
 
-            <div class="popular-product-card">
+            <li class="popular-product-card">
               <a class="card-img-link" href="#">
                 <img class="card-img" src="./images/main/popular/pistachio-popular.jpg" width="168" height="168"
                   alt="Фисташковое мороженое.">
@@ -298,7 +298,7 @@
                 <a class="card-product-link" href="#">Фисташка</a>
               </h4>
 
-              <p class="card-product-discription">Фисташковый пломбир с кусочками шоколада</p>
+              <p class="card-product-description">Фисташковый пломбир с кусочками шоколада</p>
               <div class="card-product-price">
                 <b class="product-price">340 ₽/кг</b>
                 <button class="card-product-button" type="button">
@@ -308,9 +308,9 @@
                   <span class="visually-hidden">Заказать.</span>
                 </button>
               </div>
-            </div>
+            </li>
 
-            <div class="popular-product-card">
+            <li class="popular-product-card">
               <a class="card-img-link" href="#">
                 <img class="card-img" src="./images/main/popular/blueberry-popular.jpg" width="168" height="168"
                   alt="черничное мороженое.">
@@ -319,7 +319,7 @@
                 <a class="card-product-link" href="#">Черника</a>
               </h4>
 
-              <p class="card-product-discription">Крем-брюле
+              <p class="card-product-description">Крем-брюле
                 с черничным джемом</p>
               <div class="card-product-price">
                 <b class="product-price">330 ₽/кг</b>
@@ -330,9 +330,9 @@
                   <span class="visually-hidden">Заказать.</span>
                 </button>
               </div>
-            </div>
+            </li>
 
-            <div class="popular-product-card">
+            <li class="popular-product-card">
               <a class="card-img-link" href="#">
                 <img class="card-img" src="./images/main/popular/boobl-gum-popular.jpg" width="168" height="168"
                   alt="Ванильное мороженое.">
@@ -341,7 +341,7 @@
                 <a class="card-product-link" href="#">Бабл-гам</a>
               </h4>
 
-              <p class="card-product-discription">Ванильный пломбир
+              <p class="card-product-description">Ванильный пломбир
                 со сладкой посыпкой</p>
 
               <div class="card-product-price">
@@ -353,18 +353,18 @@
                   <span class="visually-hidden">Заказать.</span>
                 </button>
               </div>
-            </div>
+            </li>
 
-          </div>
+          </ul>
         </div>
       </section>
 
 
-      <!--О магазине-->
+      <!--about-->
 
 
 
-      <section class="main-features">
+      <section class="features">
 
         <h2 class="visually-hidden">Ососбенности магазина Глейси.</h2>
 
@@ -372,19 +372,20 @@
 
           <div class="features-wrapper">
 
-            <h3 class="main-features-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
+            <h3 class="features-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
               собственного производства на развес</h3>
 
             <ul class="features-description-list ">
-              <li class="discription-item ice-cream">Всё наше мороженое изготавливается на собственном производстве с
+              <li class="description-item ice-cream">Всё наше мороженое изготавливается на собственном производстве с
                 использованием современного оборудования и проверенных временем технологий.</li>
-              <li class="discription-item milk ">Для приготовления мороженого используются сливки и молоко высочайшего
+              <li class="description-item milk ">Для приготовления мороженого используются сливки и молоко высочайшего
                 качества. Все ингредиенты
                 и добавки произведены из натурального сырья.</li>
-              <li class="discription-item ingridients">Закупка ингредиентов производится только
+              <li class="description-item ingridients">Закупка ингредиентов производится только
                 у проверенных фермерских хозяйств, с которыми
                 нас связывает долговременное сотрудничество.</li>
-              <li class="discription-item delivery">Доставка нашего мороженого осуществляется в специальном термопаке,
+              <li class="description-item delivery-description">Доставка нашего мороженого осуществляется в специальном
+                термопаке,
                 который
                 не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
 
@@ -393,20 +394,23 @@
       </section>
 
 
-      <!--Подписка-->
-      <!--рецепт-->
+      <!--subscription-->
+
+      <!--recip-->
 
 
 
-      <section class="main-news-subscription">
+      <section class="news-subscription">
+
+        <h2 class="visually-hidden">news and subscription.</h2>
 
         <div class="container">
 
-          <div class="main-news">
-            <p class="main-news-title">Новое в нашем блоге</p>
-            <a class="main-news-link" href="#">10 способов сервировки фруктовых щербетов
-              к столу</a>
-          </div>
+          <a class="news" href="#">
+            <span class="news-title">Новое в нашем блоге</span>
+            <h3 class="recip">10 способов сервировки фруктовых щербетов
+              к столу</h3>
+          </a>
 
 
           <div class="subscription">
@@ -430,18 +434,18 @@
       </section>
 
 
-      <!--Доставка-->
+      <!--delivery-->
 
 
 
-      <section class="main-delivery">
+      <section class="delivery">
 
         <h2 class="visually-hidden">delivery.</h2>
 
         <div class="container">
           <div class="delivery-wrapper">
-            <h3 class="main-delivery-title">Доставка любимого мороженого на дом</h3>
-            <p class="main-delivery-subscription">Хочется полакомиться любимым десертом, но нет времени съездить в
+            <h3 class="delivery-title">Доставка любимого мороженого на дом</h3>
+            <p class="delivery-subscription">Хочется полакомиться любимым десертом, но нет времени съездить в
               магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
           <div class="delivery-data">
@@ -465,11 +469,9 @@
         </div>
       </section>
 
-      <!--Адрес-->
+      <!--adress-->
 
-
-
-      <section class="main-adress">
+      <section class="adress">
         <h2 class="visually-hidden">Адрес главного офиса магазина.</h2>
         <div class="container">
           <div class="adress-wrapper">
@@ -488,13 +490,13 @@
 
     </main>
 
-    <!--Подвал-->
+    <!--footer-->
 
     <footer class="footer">
 
       <div class="container">
 
-        <!--Соц сети подвала-->
+        <!--footer social-->
 
 
         <ul class="social-list">
@@ -523,7 +525,7 @@
         </ul>
 
 
-        <!--Для поставщиков -->
+        <!--for suppliers -->
 
         <ul class="footer-suppliers-list">
           <li class="suppliers-item">
@@ -549,7 +551,7 @@
         </ul>
 
 
-        <!--Лого подвала и копирайт-->
+        <!--footer logo -->
 
         <div class="footer-logo">
           <img class="footer-img" src="./images/footer/footer-logo.svg" alt="логотип HTML Academy" width="93"
