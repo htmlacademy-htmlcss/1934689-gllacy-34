@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon-32x32.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon-16x16.ico"> <!-- 16x16 -->
+    <link rel="icon" type="image/png" sizes="favicon-32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <title>Сливочное мороженое</title>
   </head>
 
@@ -35,8 +39,27 @@
 
             <ul class="navigation-list">
 
-              <li class="navigation-item">
+              <li class="navigation-item catalog-dropdown">
                 <a class="navigation-link " href="catalog.html">Каталог</a>
+
+                <ul class="dropdown-list ">
+
+                  <li class="dropdown-item">
+                    <a class="dropdown-link new" href="#">Новинки</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
               </li>
               <li class="navigation-item ">
                 <a class="navigation-link " href="#">Доставка и оплата</a>
@@ -62,12 +85,45 @@
             </svg>
           </button>
 
+          <!--search input popup-->
+
+          <div class="search-content ">
+            <form class="search-area" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="search-box">Поисковая строка.</label>
+              <input class="input-text" id="search-box" type="search" name="user-search" placeholder="Поиск по сайту">
+            </form>
+          </div>
+
           <button class="header-login" type="button">
             <svg class="icon">
               <use xlink:href="./images/sprite.svg#login-ico"></use>
             </svg>
             Вход
           </button>
+
+          <!-- popup login -->
+
+          <div class="popup-login ">
+
+            <h3 class="login-title">Личный кабинет</h3>
+
+            <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <label class="visually-hidden" for="input-email">Email.</label>
+              <input class="login-input" id="login-email" type="email" name="login-email"
+                placeholder="email@example.com">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="login-input" id="login-password" type="password" name="login-password">
+
+              <div class="login-tools">
+                <button class="login-button" type="submit">Войти</button>
+                <div class="login-help">
+                  <a class="help-link" href="#">Забыли пароль?</a>
+                  <a class="help-link" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
+          </div>
 
           <button class="header-cart" type="button">
             <span class="visually-hidden">Корзина</span>
@@ -78,6 +134,48 @@
               2 товара
             </div>
           </button>
+
+          <!--cart empty-->
+
+          <div class="cart-empty ">
+            <span class="popup-text"> Ваша корзина пока пуста</span>
+          </div>
+
+          <!--cart fill-->
+
+          <div class="cart-fill ">
+            <h3 class="cart-fill-title">Корзина</h3>
+            <ul class="current-product">
+              <li class="product">
+                <img src="./images/catalog/product cards/raspberry.jpg" alt="мороженое малиновым джемом" width="46"
+                  height="46">
+                <div class="product-info">
+                  <a class="product-name" href="#">Малинка</a>
+                  <span class="features-product">1 кг х 310 ₽</span>
+                </div>
+                <b class="price">310 ₽</b>
+                <button class="erase-current-product" type="button"></button>
+              </li>
+              <li class="product">
+                <img src="./images/catalog/product cards/boobl-gum.jpg" alt="мороженое ванильным ароматом" width="46"
+                  height="46">
+                <div class="product-info">
+                  <a class="product-name" href="#">
+                    Бабл-гам
+                  </a>
+                  <span class="features-product">1,5 кг х 320 ₽</span>
+                </div>
+                <b class="price">480 ₽</b>
+                <button class="erase-current-product" type="button"></button>
+              </li>
+            </ul>
+            <div class="ordering">
+              <button class="buy-current-product" type="button">
+                Оформить заказ
+              </button>
+              <b class="price-summ">Итого: <span class="total">790</span> ₽</b>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -96,140 +194,135 @@
             <li class="breadcrambs-item">
               <a class="breadcrambs-link" href="index.html">Главная</a>
             </li>
-            <li class="breadcrambs-item">
+            <li class="breadcrambs-item ">
+
               <a class="breadcrambs-link breadcrambs-link-current">Каталог</a>
+
             </li>
           </ul>
         </div>
 
         <!--catalog filter-->
 
-        <section class="catalog-filter">
 
-          <h2 class="catalog-products-title">Сливочное мороженое</h2>
+        <!--select drop-->
 
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <section class="filtres">
 
-            <!--drop select-->
+          <h2 class="catalog-title">Сливочное мороженое</h2>
 
-            <div class="filter-data">
+          <div class="container">
 
-              <fieldset class="filter-data-item">
+            <form class="filter-form" action="https://echo.htmlacademy.ru" class="filtres-form" method="get">
 
-                <h3 class="filter-title">Сортировка:</h3>
+              <div class="filter-row">
 
-                <select class="item-sort" name="sorting" multiple>
-                  <option value="popular">по популярности</option>
-                  <option value="price">по цене</option>
-                  <option value="calory">по калорийности</option>
-                </select>
+                <div class="form-group sort">
 
-              </fieldset>
-            </div>
+                  <label class="select-title" for="select-products">Сортировка: </label>
+                  <select class="select filter-border" name="filter-select" id="select-products">
+                    <option value="popular">По популярности</option>
+                    <option value="cheap">По цене</option>
+                    <option value="expensive">По колорийности</option>
+                  </select>
 
-            <!--filter price-->
+                </div>
+                <!--renge scale-->
 
-            <div class="price">
-              <fieldset class="filter-range">
+                <div class="form-group filter-price">
+                  <label class="renge-price" name="renge-price">
+                    Цена: <span>100</span> ₽ – <span>500</span> ₽
+                  </label>
 
-                <label class="range-price">
-                  <span>Цена:</span>
-                  <input class="price-select" type="number" value="100" name="min-price">
-                  <span>₽</span>
-                </label>
+                  <div class="range-wrapper filter-border">
+                    <div class="filter-scale">
+                      <div class="filter-bar">
+                        <button class="filter-toggle filter-toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="filter-toggle filter-toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
 
-                <label class="range-price">
-                  <span>-</span>
-                  <input class="price-select" type="number" value="500" name="max-price">
-                  <span>₽</span>
-                </label>
+                </div>
 
-              </fieldset>
-            </div>
+                <!--filter fat-->
 
-            <!---filter calories-->
+                <div class="form-group fat">
+                  <span>Жирность:</span>
 
-            <div class="calories">
-
-              <fieldset class="filter-calories">
-
-                <h3 class="calories-title">Жирность:</h3>
-                <ul class="calories-list">
-                  <li class="calories-item">
-                    <label class="calories-zero">
-                      <input class="calories-check" type="radio" value="0%" name="input-radio">
-                      <span class="check-value">0%</span>
+                  <div class="input-group filter-border">
+                    <label class="control-radio">
+                      <input class="visually-hidden control-input-radio" type="radio" name="fat">
+                      <span class="control-mark-radio"></span>
+                      <span class="imput-data">0%</span>
                     </label>
-                  </li>
-                  <li class="calories-item">
-                    <label class="calories-ten">
-                      <input class="calories-check" type="radio" value="до 10%" name="input-radio" checked>
-                      <span class="check-value">до 10%</span>
+                    <label class="control-radio">
+                      <input class="visually-hidden control-input-radio" type="radio" name="fat" checked>
+                      <span class="control-mark-radio"></span>
+                      <span class="imput-data">до 10%</span>
                     </label>
-                  </li>
-                  <li class="calories-item">
-                    <label class="ccalories-thirty">
-                      <input class="calories-check" type="radio" value="до 30%" name="input-radio">
-                      <span class="check-value">до 30%</span>
+                    <label class="control-radio">
+                      <input class="visually-hidden control-input-radio" type="radio" name="fat">
+                      <span class="control-mark-radio"></span>
+                      <span class="imput-data">до 30%</span>
                     </label>
-                  </li>
-                  <li class="calories-item">
-                    <label class="calories-thirty-up">
-                      <input class="caloriesy-check" type="radio" value="выше 30%" name="input-radio">
-                      <span class="check-value">выше 30%</span>
+                    <label class="control-radio">
+                      <input class="visually-hidden control-input-radio" type="radio" name="fat">
+                      <span class="control-mark-radio"></span>
+                      <span class="imput-data">выше 30%</span>
                     </label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
+                  </div>
+                </div>
+              </div>
 
-            <!--filter filler-->
+              <!--filter filler-->
 
-            <div class="filter-filler">
-              <fieldset class="filler-components" aria-label="Фильтр по наполнителям">
-                <h3 class="filter-filler-title">Наполнители:</h2>
-                  <ul class="filler-list">
-                    <li class="filler-item">
-                      <label class="item-product">
-                        <input class="ingredient" type="checkbox" name="chocolate" checked>
-                        <span class="visualy-effect-checked"></span>
-                        <span class="ingredient-title">шоколадные</span>
-                      </label>
-                    </li>
-                    <li class="filler-item">
-                      <label class="item-product">
-                        <input class="ingredient" type="checkbox" name="chocolate" checked>
-                        <span class="visualy-effect-checked"></span>
-                        <span class="ingredient-title">сахарные посыпки</span>
-                      </label>
-                    </li>
-                    <li class="filler-item">
-                      <label class="item-product">
-                        <input class="ingredient" type="checkbox" name="chocolate">
-                        <span class="visualy-effect-checked"></span>
-                        <span class="ingredient-title">фрукты</span>
-                      </label>
-                    </li>
-                    <li class="filler-item">
-                      <label class="item-product">
-                        <input class="ingredient" type="checkbox" name="chocolate">
-                        <span class="visualy-effect-checked"></span>
-                        <span class="ingredient-title">сиропы</span>
-                      </label>
-                    </li>
-                    <li class="filler-item">
-                      <label class="item-product">
-                        <input class="ingredient" type="checkbox" name="chocolate">
-                        <span class="visualy-effect-checked"></span>
-                        <span class="ingredient-title">джемы</span>
-                      </label>
-                    </li>
-                  </ul>
-              </fieldset>
-            </div>
-            <button class="filter-button">Применить</button>
-          </form>
+              <div class="filter-row">
+
+                <div class="filter-ingridients">
+                  <span class="filter-title">Наполнители:</span>
+
+                  <div class="input-group filter-border filler">
+                    <label>
+                      <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients" checked>
+                      <span class="filter-check filter-check-box"></span>
+                      <span class="imput-data">шоколадные</span>
+                    </label>
+                    <label>
+                      <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients" checked>
+                      <span class="filter-check filter-check-box"></span>
+                      <span class="imput-data">сахарные посыпки</span>
+                    </label>
+                    <label>
+                      <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients">
+                      <span class="filter-check filter-check-box"></span>
+                      <span class="imput-data">фрукты</span>
+                    </label>
+                    <label>
+                      <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients">
+                      <span class="filter-check filter-check-box"></span>
+                      <span class="imput-data">сиропы</span>
+                    </label>
+                    <label>
+                      <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients">
+                      <span class="filter-check filter-check-box"></span>
+                      <span class="imput-data">джемы</span>
+                    </label>
+                  </div>
+                </div>
+                <!--filter button-->
+
+                <button class="filter-button">Применить</button>
+
+              </div>
+            </form>
+          </div>
         </section>
+
 
         <!--catalog product list-->
 
@@ -237,7 +330,7 @@
 
           <li class="popular-product-card">
             <a class="card-img-link" href="#">
-              <img class="card-img" src="./images/main/popular/raspberry-popular.jpg" width="168" height="168"
+              <img class="card-img" src="./images/main/popular/raspberry.jpg" width="168" height="168"
                 alt="Малининовое мороженое.">
             </a>
             <h4 class="card-product-title">
@@ -258,7 +351,7 @@
 
           <li class="popular-product-card">
             <a class="card-img-link" href="#">
-              <img class="card-img" src="./images/main/popular/pistachio-popular.jpg" width="168" height="168"
+              <img class="card-img" src="./images/main/popular/pistachio.jpg" width="168" height="168"
                 alt="Фисташковое мороженое.">
             </a>
             <h4 class="card-product-title">
@@ -279,7 +372,7 @@
 
           <li class="popular-product-card">
             <a class="card-img-link" href="#">
-              <img class="card-img" src="./images/main/popular/blueberry-popular.jpg" width="168" height="168"
+              <img class="card-img" src="./images/main/popular/blueberry.jpg" width="168" height="168"
                 alt="черничное мороженое.">
             </a>
             <h4 class="card-product-title">
@@ -301,7 +394,7 @@
 
           <li class="popular-product-card">
             <a class="card-img-link" href="#">
-              <img class="card-img" src="./images/main/popular/boobl-gum-popular.jpg" width="168" height="168"
+              <img class="card-img" src="./images/main/popular/boobl-gum.jpg" width="168" height="168"
                 alt="Ванильное мороженое.">
             </a>
             <h4 class="card-product-title">

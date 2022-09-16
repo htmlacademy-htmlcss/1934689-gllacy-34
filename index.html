@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon-32x32.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon-16x16.ico"> <!-- 16x16 -->
+    <link rel="icon" type="image/png" sizes="favicon-32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <title>Интерент магазин мороженого Глейси</title>
 
   </head>
@@ -35,10 +39,29 @@
 
             <h2 class="visually-hidden">каталог мороженого</h2>
 
-            <ul class="navigation-list">
+            <ul class="navigation-list dropdown-list-open">
 
-              <li class="navigation-item">
+              <li class="navigation-item catalog-dropdown">
                 <a class="navigation-link " href="catalog.html">Каталог</a>
+
+                <ul class="dropdown-list ">
+
+                  <li class="dropdown-item">
+                    <a class="dropdown-link new" href="#">Новинки</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
               </li>
               <li class="navigation-item ">
                 <a class="navigation-link " href="#">Доставка и оплата</a>
@@ -64,12 +87,47 @@
             </svg>
           </button>
 
-          <button class="header-login" type="button">
+          <!--search input popup-->
+
+          <div class="search-content ">
+            <form class="search-area" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="search-box">Поисковая строка.</label>
+              <input class="input-text" id="search-box" type="search" name="user-search" placeholder="Поиск по сайту">
+            </form>
+          </div>
+
+          <button class="header-login  " type="button">
             <svg class="icon">
               <use xlink:href="./images/sprite.svg#login-ico"></use>
             </svg>
             Вход
           </button>
+
+          <!-- popup login -->
+
+          <div class="popup-login ">
+
+            <h3 class="login-title">Личный кабинет</h3>
+
+            <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <label class="visually-hidden" for="input-email">Email.</label>
+              <input class="login-input" id="login-email" type="email" name="login-email"
+                placeholder="email@example.com">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="login-input" id="login-password" type="password" name="login-password">
+
+              <div class="login-tools">
+                <button class="login-button" type="submit">Войти</button>
+                <div class="login-help">
+                  <a class="help-link" href="#">Забыли пароль?</a>
+                  <a class="help-link" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!--cart-->
 
           <button class="header-cart" type="button">
             <span class="visually-hidden">Корзина</span>
@@ -80,6 +138,48 @@
               2 товара
             </div>
           </button>
+
+          <!--cart empty-->
+
+          <div class="cart-empty ">
+            <span class="popup-text"> Ваша корзина пока пуста</span>
+          </div>
+
+          <!--cart fill-->
+
+          <div class="cart-fill">
+            <h3 class="cart-fill-title">Корзина</h3>
+            <ul class="current-product">
+              <li class="product">
+                <img src="./images/catalog/product cards/raspberry.jpg" alt="мороженое малиновым джемом" width="46"
+                  height="46">
+                <div class="product-info">
+                  <a class="product-name" href="#">Малинка</a>
+                  <span class="features-product">1 кг х 310 ₽</span>
+                </div>
+                <b class="price">310 ₽</b>
+                <button class="erase-current-product" type="button"></button>
+              </li>
+              <li class="product">
+                <img src="./images/catalog/product cards/boobl-gum.jpg" alt="мороженое ванильным ароматом" width="46"
+                  height="46">
+                <div class="product-info">
+                  <a class="product-name" href="#">
+                    Бабл-гам
+                  </a>
+                  <span class="features-product">1,5 кг х 320 ₽</span>
+                </div>
+                <b class="price">480 ₽</b>
+                <button class="erase-current-product" type="button"></button>
+              </li>
+            </ul>
+            <div class="ordering">
+              <button class="buy-current-product" type="button">
+                Оформить заказ
+              </button>
+              <b class="price-summ">Итого: <span class="total">790</span> ₽</b>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -270,7 +370,7 @@
 
             <li class="popular-product-card">
               <a class="card-img-link" href="#">
-                <img class="card-img" src="./images/main/popular/raspberry-popular.jpg" width="168" height="168"
+                <img class="card-img" src="./images/main/popular/raspberry.jpg" width="168" height="168"
                   alt="Малининовое мороженое.">
               </a>
               <h4 class="card-product-title">
@@ -291,7 +391,7 @@
 
             <li class="popular-product-card">
               <a class="card-img-link" href="#">
-                <img class="card-img" src="./images/main/popular/pistachio-popular.jpg" width="168" height="168"
+                <img class="card-img" src="./images/main/popular/pistachio.jpg" width="168" height="168"
                   alt="Фисташковое мороженое.">
               </a>
               <h4 class="card-product-title">
@@ -312,7 +412,7 @@
 
             <li class="popular-product-card">
               <a class="card-img-link" href="#">
-                <img class="card-img" src="./images/main/popular/blueberry-popular.jpg" width="168" height="168"
+                <img class="card-img" src="./images/main/popular/blueberry.jpg" width="168" height="168"
                   alt="черничное мороженое.">
               </a>
               <h4 class="card-product-title">
@@ -334,7 +434,7 @@
 
             <li class="popular-product-card">
               <a class="card-img-link" href="#">
-                <img class="card-img" src="./images/main/popular/boobl-gum-popular.jpg" width="168" height="168"
+                <img class="card-img" src="./images/main/popular/boobl-gum.jpg" width="168" height="168"
                   alt="Ванильное мороженое.">
               </a>
               <h4 class="card-product-title">
@@ -569,3 +669,28 @@
   </body>
 
 </html>
+
+
+<div class="modal modal-close">
+  <div class="modal-wrapper">
+    <button class="modal-close-button" type="button"></button>
+    <section class="modal-content">
+      <h2 class="modal-title">Мы обязательно тветим вам!</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="input-person">Имя и фамилия.</label>
+        <input class="modal-input" type="text" id="input-person" name="person-data" placeholder="Имя и фамилия"
+          required>
+        <label class="visually-hidden" for="input-email">Имя и фамилия.</label>
+        <input class="modal-input" type="email" id="input-email" name="person-email" placeholder="email@example.com"
+          required>
+        <label class="visually-hidden" for="input-email">Имя и фамилия.</label>
+        <textarea class="modal-input" id="input-text" name="person-text" rows="6"
+          placeholder="В свободной форме"></textarea>
+
+        <div class="button-wrapper">
+          <button class="modal-button" type="submit">Отправить</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</div>
