@@ -1025,6 +1025,7 @@ body {
 /*button order*/
 
 .slider-button {
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -1350,6 +1351,7 @@ body {
 /*button order prezents*/
 
 .prezent-button {
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -1442,6 +1444,8 @@ body {
 }
 
 .popular-product-card a {
+  display: flex;
+  flex-wrap: wrap;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1450,6 +1454,8 @@ body {
   text-align: center;
   color: #2d3440;
   text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid transparent;
 }
 
 .card-img {
@@ -1473,14 +1479,10 @@ body {
 }
 
 .card-product-link:focus {
-  padding: 7px 15px;
+  padding: 8px 16px;
   background-color: #ffcbd8;
   border: 2px solid #000000;
   border-radius: 30px;
-}
-
-.card-product-title {
-  margin-bottom: 8px;
 }
 
 .card-product-description {
@@ -1908,10 +1910,70 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
-  background-image: url("../images/main/delivery/input-ico.svg");
-  background-repeat: no-repeat;
-  background-position: 43px 3px;
-  background-size: 13px;
+}
+
+/*tooltip date*/
+
+.tooltip {
+  display: flex;
+  align-items: center;
+}
+
+.tooltip-button {
+  position: relative;
+  justify-content: center;
+  align-self: flex-end;
+  height: 11px;
+  background-color: transparent;
+  border: none;
+}
+
+.tooltip-text {
+  position: absolute;
+  display: none;
+  left: 19px;
+  top: -13px;
+  z-index: 1;
+  width: 170px;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px #c2c2c233;
+  border: 1px solid #b9b9b9;
+}
+
+.tooltip-button:hover .tooltip-text {
+  display: block;
+}
+
+.tooltip-button:hover::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  z-index: 2;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 0;
+  border-right: 7px solid #ffffff;
+}
+
+.tooltip-button:hover::before {
+  content: "";
+  position: absolute;
+  right: -9px;
+  top: -5px;
+  z-index: 2;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 0;
+  border-right: 7px solid #b9b9b9;
 }
 
 .date-input {
@@ -1951,10 +2013,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
-  background-image: url("../images/main/delivery/input-ico.svg");
-  background-repeat: no-repeat;
-  background-position: 53px 3px;
-  background-size: 13px;
 }
 
 .adress-input {
