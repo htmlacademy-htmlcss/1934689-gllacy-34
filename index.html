@@ -39,12 +39,12 @@
 
             <h2 class="visually-hidden">каталог мороженого</h2>
 
-            <ul class="navigation-list dropdown-list-open">
+            <ul class="navigation-list">
 
               <li class="navigation-item catalog-dropdown">
-                <a class="navigation-link " href="catalog.html">Каталог</a>
+                <a class="navigation-link" href="catalog.html">Каталог</a>
 
-                <ul class="dropdown-list ">
+                <ul class="dropdown-list">
 
                   <li class="dropdown-item">
                     <a class="dropdown-link new" href="#">Новинки</a>
@@ -63,11 +63,11 @@
                   </li>
                 </ul>
               </li>
-              <li class="navigation-item ">
-                <a class="navigation-link " href="#">Доставка и оплата</a>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Доставка и оплата</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link " href="about.html">О компании</a>
+                <a class="navigation-link" href="about.html">О компании</a>
               </li>
             </ul>
           </nav>
@@ -80,7 +80,7 @@
             +7 800 555-86-28
           </a>
 
-          <button class="header-search " type="button">
+          <button class="header-search" type="button">
             <span class="visually-hidden">Поиск.</span>
             <svg class="icon">
               <use xlink:href="./images/sprite.svg#search-ico"></use>
@@ -89,14 +89,14 @@
 
           <!--search input popup-->
 
-          <div class="search-content ">
+          <div class="search-content">
             <form class="search-area" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="search-box">Поисковая строка.</label>
               <input class="input-text" id="search-box" type="search" name="user-search" placeholder="Поиск по сайту">
             </form>
           </div>
 
-          <button class="header-login  " type="button">
+          <button class="header-login" type="button">
             <svg class="icon">
               <use xlink:href="./images/sprite.svg#login-ico"></use>
             </svg>
@@ -105,7 +105,7 @@
 
           <!-- popup login -->
 
-          <div class="popup-login ">
+          <div class="popup-login">
 
             <h3 class="login-title">Личный кабинет</h3>
 
@@ -147,7 +147,7 @@
 
           <!--cart fill-->
 
-          <div class="cart-fill">
+          <div class="cart-fill cart-fill-active">
             <h3 class="cart-fill-title">Корзина</h3>
             <ul class="current-product">
               <li class="product">
@@ -336,18 +336,20 @@
         <ul class="container">
 
           <li class="prezent-left">
-            <h3 class="prezent-left-title">Малинка даром!</h3>
-            <p class="prezent-left-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
-              банку малинового варенья бесплатно.</p>
-            <a class="prezent-button" href="#">Хочу подарок</a>
-
+            <div class="prezent-wrapper">
+              <h3 class="prezent-left-title">Малинка даром!</h3>
+              <p class="prezent-left-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ
+                банку малинового варенья бесплатно.</p>
+              <a class="prezent-button" href="#">Хочу подарок</a>
+            </div>
           </li>
           <li class="prezent-right">
-            <h3 class="prezent-right-title">Маршмеллоу даром!</h3>
-            <p class="prezent-right-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
-              зефирок совершенно бесплатно.</p>
-            <a class="prezent-button" href="#">Хочу подарок</a>
-
+            <div class="prezent-wrapper">
+              <h3 class="prezent-right-title">Маршмеллоу даром!</h3>
+              <p class="prezent-right-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных
+                зефирок совершенно бесплатно.</p>
+              <a class="prezent-button" href="#">Хочу подарок</a>
+            </div>
           </li>
         </ul>
       </section>
