@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon-32x32.ico"> <!-- 32×32 -->
     <link rel="icon" href="favicon-16x16.ico"> <!-- 16x16 -->
-    <link rel="icon" type="image/png" sizes="favicon-32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <title>Интерент магазин мороженого Глейси</title>
 
@@ -134,24 +134,22 @@
             <svg class="icon">
               <use xlink:href="./images/sprite.svg#cart-ico"></use>
             </svg>
-            <div class="fill-cart">
-              2 товара
-            </div>
+            2 товара
           </button>
 
           <!--cart empty-->
 
-          <div class="cart-empty ">
+          <div class="cart-empty">
             <span class="popup-text"> Ваша корзина пока пуста</span>
           </div>
 
           <!--cart fill-->
 
-          <div class="cart-fill cart-fill-active">
+          <div class="cart-fill">
             <h3 class="cart-fill-title">Корзина</h3>
             <ul class="current-product">
               <li class="product">
-                <img src="./images/catalog/product cards/raspberry.jpg" alt="мороженое малиновым джемом" width="46"
+                <img src="./images/catalog/product-cards/raspberry.jpg" alt="мороженое малиновым джемом" width="46"
                   height="46">
                 <div class="product-info">
                   <a class="product-name" href="#">Малинка</a>
@@ -161,7 +159,7 @@
                 <button class="erase-current-product" type="button"></button>
               </li>
               <li class="product">
-                <img src="./images/catalog/product cards/boobl-gum.jpg" alt="мороженое ванильным ароматом" width="46"
+                <img src="./images/catalog/product-cards/boobl-gum.jpg" alt="мороженое ванильным ароматом" width="46"
                   height="46">
                 <div class="product-info">
                   <a class="product-name" href="#">
@@ -240,9 +238,9 @@
                 возрастов
               </p>
             </li>
-
-            <a class="slider-button" href="#">Заказать</a>
-
+            <li>
+              <a class="slider-button" href="#">Заказать</a>
+            </li>
           </ul>
 
           <!--slider pagination-->
@@ -490,7 +488,7 @@
                 термопаке,
                 который
                 не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
-
+            </ul>
           </div>
         </div>
       </section>
@@ -557,29 +555,32 @@
 
               <!--tooltip date-->
 
-              <span class="tooltip">
-                <label class="form-date" for="date">Дата
-                  <button class="tooltip-button" type="button" aria-labellebly="tooltip-date">
-                    <svg width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="tooltip">
+                <div>
+                  <label class="form-date" for="date">Дата</label>
+                  <button class="tooltip-button" type="button">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
                         fill="#2D3440" />
                     </svg>
                     <span class="tooltip-text" id="tooltip-date" role="tooltip">Введите дату доставки</span>
                   </button>
-                  <input class="date-input" type="text" id="date" name="date" placeholder="01.04.2020" required>
-                </label>
-              </span>
+                </div>
+                <input class="date-input" type="text" id="date" name="date-delivery" placeholder="01.04.2020" required>
+              </div>
+
               <label class="form-telephone" for="tel">Телефон
                 <input class="telephone-input" type="text" id="tel" name="tel" placeholder="+7 800 999-00-00" required>
               </label>
 
               <!--tooltip adress-->
 
-              <span class="tooltip">
-                <label class="form-adress" for="adress">Адрес
-                  <button class="tooltip-button" type="button" aria-labellebly="tooltip-date">
-                    <svg width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="tooltip">
+                <div>
+                  <label class="form-adress" for="adress">Адрес</label>
+                  <button class="tooltip-button" type="button">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
                         fill="#2D3440" />
@@ -587,11 +588,10 @@
                     <span class="tooltip-text" id="tooltip-adress" role="tooltip">Введите название улицы, дома и
                       квартиры</span>
                   </button>
-                  <input class="adress-input" type="text" id="adress" name="adress"
-                    placeholder="ул. Большая Конюшенная, 19/8" required>
-                </label>
-              </span>
-
+                </div>
+                <input class="adress-input" type="text" id="adress" name="adress"
+                  placeholder="ул. Большая Конюшенная, 19/8" required>
+              </div>
               <button class="data-form-button" type="submit">Отправить</button>
             </form>
           </div>
@@ -695,31 +695,32 @@
 
     </footer>
 
+
+
+    <div class="modal modal-close">
+      <div class="modal-wrapper">
+        <button class="modal-close-button" type="button"></button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно тветим вам!</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="input-person">Имя и фамилия.</label>
+            <input class="modal-input" type="text" id="input-person" name="person-data" placeholder="Имя и фамилия"
+              required>
+            <label class="visually-hidden" for="input-email">Имя и фамилия.</label>
+            <input class="modal-input" type="email" id="input-email" name="person-email" placeholder="email@example.com"
+              required>
+            <label class="visually-hidden" for="input-email">Имя и фамилия.</label>
+            <textarea class="modal-input" id="input-text" name="person-text" rows="6"
+              placeholder="В свободной форме"></textarea>
+
+            <div class="button-wrapper">
+              <button class="modal-button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
-
-
-<div class="modal modal-close">
-  <div class="modal-wrapper">
-    <button class="modal-close-button" type="button"></button>
-    <section class="modal-content">
-      <h2 class="modal-title">Мы обязательно тветим вам!</h2>
-      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="visually-hidden" for="input-person">Имя и фамилия.</label>
-        <input class="modal-input" type="text" id="input-person" name="person-data" placeholder="Имя и фамилия"
-          required>
-        <label class="visually-hidden" for="input-email">Имя и фамилия.</label>
-        <input class="modal-input" type="email" id="input-email" name="person-email" placeholder="email@example.com"
-          required>
-        <label class="visually-hidden" for="input-email">Имя и фамилия.</label>
-        <textarea class="modal-input" id="input-text" name="person-text" rows="6"
-          placeholder="В свободной форме"></textarea>
-
-        <div class="button-wrapper">
-          <button class="modal-button" type="submit">Отправить</button>
-        </div>
-      </form>
-    </section>
-  </div>
-</div>
