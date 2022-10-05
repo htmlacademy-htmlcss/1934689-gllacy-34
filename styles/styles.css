@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 @font-face {
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/inter-400.woff2") format("woff2");
@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/inter-700.woff2") format("woff2");
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/inter-900.woff2") format("woff2");
@@ -150,7 +150,7 @@
 }
 
 .modal-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -162,7 +162,7 @@
   max-width: 442px;
   margin-bottom: 16px;
   padding: 14px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -214,7 +214,7 @@
 
 .modal-button {
   margin-right: 27px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -308,7 +308,7 @@
 
 .dropdown-link {
   display: block;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -332,7 +332,7 @@
 
 .new {
   position: relative;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -400,7 +400,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -497,7 +497,7 @@ body {
 }
 
 .navigation-link {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -550,7 +550,7 @@ body {
 /*header tel*/
 
 .header-phone {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -629,7 +629,7 @@ body {
   align-items: center;
   min-width: 88px;
   height: 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -705,7 +705,7 @@ body {
 }
 
 .login-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -715,7 +715,7 @@ body {
 }
 
 .input-text {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -728,7 +728,7 @@ body {
   padding: 14px 16px;
   min-width: 324px;
   border: 1px solid #b9b9b9;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -779,7 +779,7 @@ body {
   background-clip: padding-box;
   border-radius: 26px;
   margin-right: 23px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -834,7 +834,7 @@ body {
 }
 
 .help-link {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -869,7 +869,7 @@ body {
   align-items: center;
   min-width: 32px;
   min-height: 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -927,7 +927,7 @@ body {
 }
 
 .popup-text {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -964,7 +964,7 @@ body {
 }
 
 .cart-fill-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1037,7 +1037,7 @@ body {
   justify-content: flex-start;
   text-decoration: none;
   margin-bottom: 4px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1057,7 +1057,7 @@ body {
 }
 
 .features-product {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1066,7 +1066,7 @@ body {
 }
 
 .price {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1127,7 +1127,7 @@ body {
   background-clip: padding-box;
   border-radius: 26px;
   padding: 12px 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1216,7 +1216,7 @@ body {
 .slider-title {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
@@ -1230,7 +1230,7 @@ body {
 .product-description {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1247,7 +1247,7 @@ body {
 
 .slider-button {
   display: inline-block;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -1563,7 +1563,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -1593,7 +1593,7 @@ body {
 /*title*/
 
 .prezent-left-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1605,7 +1605,7 @@ body {
 /*description*/
 
 .prezent-left-description {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1632,7 +1632,7 @@ body {
 /*title*/
 
 .prezent-right-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1644,7 +1644,7 @@ body {
 /*description*/
 
 .prezent-right-description {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1657,7 +1657,7 @@ body {
 
 .prezent-button {
   display: inline-block;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -1730,7 +1730,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -1778,7 +1778,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1800,7 +1800,7 @@ body {
 }
 
 .card-product-description {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1887,7 +1887,7 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1920,7 +1920,7 @@ body {
 }
 
 .features-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -1947,7 +1947,7 @@ body {
   position: relative;
   width: 490px;
   padding-left: 64px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2028,7 +2028,7 @@ body {
 }
 
 .news-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2040,7 +2040,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -2082,7 +2082,7 @@ body {
 }
 
 .subscription-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2103,7 +2103,7 @@ body {
 }
 
 .subscription-input {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2176,7 +2176,7 @@ body {
   background-clip: padding-box;
   border-radius: 26px;
   padding: 12px 32px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -2249,7 +2249,7 @@ body {
 }
 
 .delivery-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -2259,7 +2259,7 @@ body {
 }
 
 .delivery-subscription {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2279,7 +2279,7 @@ body {
 
 .delivery-data-title {
   max-width: 380px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2316,7 +2316,7 @@ body {
 
 .form-date {
   min-width: 57px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -2387,7 +2387,7 @@ body {
 }
 
 .date-input {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2405,7 +2405,7 @@ body {
 
 .form-telephone {
   min-width: 287px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -2414,7 +2414,7 @@ body {
 }
 
 .telephone-input {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2431,7 +2431,7 @@ body {
 }
 
 .form-adress {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -2442,7 +2442,7 @@ body {
 }
 
 .adress-input {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2464,7 +2464,7 @@ body {
   padding: 12px 32px;
   background-clip: padding-box;
   border-radius: 26px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -2542,7 +2542,7 @@ body {
 }
 
 .adress-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2552,7 +2552,7 @@ body {
 }
 
 .adress-text {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2562,7 +2562,7 @@ body {
 }
 
 .adress-tel {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2580,7 +2580,7 @@ body {
 }
 
 .adress-note {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2594,7 +2594,7 @@ body {
   padding: 12px 32px;
   background-clip: padding-box;
   border-radius: 26px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -2757,7 +2757,7 @@ body {
   width: 400px;
   padding-left: 5px;
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2820,7 +2820,7 @@ body {
 
 .footer-copyright {
   margin-top: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -2858,7 +2858,7 @@ body {
 }
 
 .catalog-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -2887,7 +2887,7 @@ body {
   -ms-flex-pack: start;
   justify-content: flex-start;
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -2911,7 +2911,7 @@ body {
 }
 
 .breadcrambs-link {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -2973,7 +2973,7 @@ body {
 }
 
 .sort label {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2983,7 +2983,7 @@ body {
 }
 
 .select {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -3024,7 +3024,7 @@ body {
 }
 
 .filter-price label {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -3105,7 +3105,7 @@ body {
 }
 
 .fat > span {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -3199,7 +3199,7 @@ body {
 }
 
 .imput-data {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -3226,7 +3226,7 @@ body {
 }
 
 .filter-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -3306,7 +3306,7 @@ label:not(:last-child) .title-ingridients {
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding: 8px 52px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -3377,7 +3377,7 @@ label:not(:last-child) .title-ingridients {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -3429,7 +3429,7 @@ label:not(:last-child) .title-ingridients {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -3451,7 +3451,7 @@ label:not(:last-child) .title-ingridients {
 }
 
 .card-product-description-catalog {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -3543,7 +3543,7 @@ label:not(:last-child) .title-ingridients {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -3585,7 +3585,7 @@ label:not(:last-child) .title-ingridients {
 }
 
 .button-showmore {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -3664,7 +3664,7 @@ label:not(:last-child) .title-ingridients {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -3710,7 +3710,7 @@ label:not(:last-child) .title-ingridients {
   -ms-flex-align: center;
   align-items: center;
   text-decoration: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
