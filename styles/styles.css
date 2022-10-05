@@ -4,6 +4,29 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -377,7 +400,7 @@
 }
 
 body {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -484,10 +507,6 @@ body {
   padding: 8px 16px;
 }
 
-.navigation-item:not(:last-child) {
-  margin-right: 4px;
-}
-
 /*current page*/
 
 .current-page {
@@ -537,7 +556,7 @@ body {
   font-size: 16px;
   color: #2d3440;
   text-decoration: none;
-  margin-right: 16px;
+  margin-right: 17px;
 }
 
 .header-phone:hover {
@@ -562,7 +581,7 @@ body {
   border-radius: 27px;
   cursor: pointer;
   border: none;
-  margin-right: 16px;
+  margin-right: 15px;
 }
 
 /*search icon*/
@@ -620,7 +639,7 @@ body {
   cursor: pointer;
   border: 2px solid transparent;
   padding: 6px 16px;
-  margin-right: 16px;
+  margin-right: 15px;
 }
 
 /*logo icon */
@@ -709,7 +728,7 @@ body {
   padding: 14px 16px;
   min-width: 324px;
   border: 1px solid #b9b9b9;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -859,7 +878,7 @@ body {
   border-radius: 27px;
   cursor: pointer;
   border: 2px solid transparent;
-  padding: 6px 16px;
+  padding: 6px 14px;
 }
 
 /*cart icon*/
@@ -1153,7 +1172,7 @@ body {
 }
 
 .slider {
-  margin-bottom: 80px;
+  margin-bottom: 83px;
 }
 
 .slider .container {
@@ -1183,7 +1202,7 @@ body {
 
 .slider-description-item {
   display: none;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 
 .slider-title {
@@ -1220,7 +1239,7 @@ body {
 
 .slider-button {
   display: inline-block;
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -1523,7 +1542,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 300px;
+  max-width: 320px;
 }
 
 .prezent-title {
@@ -1543,9 +1562,9 @@ body {
   line-height: 46px;
   color: #2d3440;
   margin: 0 33%;
-  min-width: 434px;
+  max-width: 600px;
   margin-top: -7px;
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 /*prezents left*/
@@ -1555,9 +1574,9 @@ body {
   width: 50%;
   background: #ff7799;
   border-radius: 16px;
-  padding-top: 38px;
+  padding-top: 37px;
   padding-left: 35px;
-  padding-bottom: 33px;
+  padding-bottom: 29px;
   background-image: url("../images/main/prezents/raspberry-prezent.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -1584,7 +1603,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #2d3440;
-  margin-bottom: 20px;
+  padding-bottom: 28px;
 }
 
 /*пprezent right*/
@@ -1630,7 +1649,7 @@ body {
 
 .prezent-button {
   display: inline-block;
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -1643,8 +1662,13 @@ body {
   -webkit-box-shadow: 0 4px 12px rgb(45 52 64 / 10%);
   box-shadow: 0 4px 12px rgb(45 52 64 / 10%);
   border-radius: 26px;
-  padding: 12px 32px;
+  padding: 11px 31px;
   cursor: pointer;
+  margin-top: 0;
+}
+
+.prezent-right .prezent-button {
+  margin-top: 0;
 }
 
 .prezent-button:hover {
@@ -1706,7 +1730,7 @@ body {
   color: #2d3440;
   margin: 0 25%;
   min-width: 527px;
-  margin-bottom: 107px;
+  margin-bottom: 108px;
 }
 
 .popular-product {
@@ -1740,7 +1764,7 @@ body {
   padding: 0 28px 25px 28px;
 }
 
-.popular-product-card a {
+.popular-product-card .card-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1753,11 +1777,9 @@ body {
   line-height: 24px;
   text-align: center;
   color: #2d3440;
-  text-decoration: none;
-  padding: 8px 16px;
+  padding: 0;
+  padding-bottom: 2px;
   border: 2px solid transparent;
-  cursor: default;
-  outline: none;
 }
 
 .card-img {
@@ -1765,9 +1787,8 @@ body {
   -o-object-fit: contain;
   object-fit: contain;
   border-radius: 50%;
-  margin-top: -60px;
-  margin-bottom: -4px;
-  cursor: default;
+  margin-top: -51px;
+  margin-bottom: 14px;
 }
 
 .card-product-description {
@@ -1778,7 +1799,7 @@ body {
   line-height: 22px;
   text-align: center;
   color: #565c66;
-  margin-bottom: 15px;
+  margin-bottom: 21px;
 }
 
 .card-product-price {
@@ -1842,7 +1863,6 @@ body {
 .card-product-button:disabled {
   background-color: #b9b9b9;
   border: 2px solid #b9b9b9;
-
   cursor: default;
 }
 
@@ -1871,7 +1891,7 @@ body {
 /*features section*/
 
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 79px;
 }
 
 .features .container {
@@ -1885,7 +1905,8 @@ body {
 
 .features-wrapper {
   min-width: 1122px;
-  padding: 45px 40px;
+  padding: 57px 40px;
+  padding-bottom: 33px;
   background-color: #fcfcfc;
   border-radius: 16px;
 }
@@ -1898,7 +1919,7 @@ body {
   line-height: 46px;
   text-align: center;
   color: #2d3440;
-  margin: 0 auto 10px;
+  margin: 0 auto 45px;
 }
 
 .features-description-list {
@@ -1907,7 +1928,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 40px 31px;
+  gap: 7px 30px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -1924,6 +1945,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #565c66;
+  padding-top: 11px;
 }
 
 .milk {
@@ -1933,28 +1955,28 @@ body {
 .ice-cream::before {
   position: absolute;
   left: 0;
-  top: 11px;
+  top: 10px;
   content: url("../images/main/features/ice-cream.png");
 }
 
 .ingridients::before {
   position: absolute;
   left: 0;
-  top: 11px;
+  top: 10px;
   content: url("../images/main/features/leaf.png");
 }
 
 .milk::before {
   position: absolute;
-  top: 11px;
-  left: 16px;
+  top: 10px;
+  left: 17px;
   content: url("../images/main/features/cow.png");
 }
 
 .delivery-description::before {
   position: absolute;
-  left: 16px;
-  top: 11px;
+  left: 17px;
+  top: 10px;
   content: url("../images/main/features/thermometer.png");
 }
 
@@ -1965,7 +1987,7 @@ body {
 /*news and subscription section */
 
 .news-subscription {
-  margin-bottom: 80px;
+  margin-bottom: 79px;
 }
 
 .news-subscription .container {
@@ -2208,7 +2230,7 @@ body {
   align-items: center;
   background-color: #fcfcfc;
   border-radius: 16px;
-  padding: 64px 64px 64px 100px;
+  padding: 66px 64px 64px 100px;
   background-image: url("../images/main/delivery/delivery.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -2239,19 +2261,23 @@ body {
 
 .delivery-data {
   max-width: 500px;
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 38px;
+  padding-bottom: 40px;
   background-color: #fcfcfc;
   border-radius: 8px;
 }
 
 .delivery-data-title {
+  max-width: 380px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #565c66;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .delivery-data-form {
@@ -2259,7 +2285,7 @@ body {
   display: grid;
   -ms-grid-columns: 116px 16px 286px;
   grid-template-columns: 116px 286px;
-  gap: 22px 16px;
+  gap: 18px 18px;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -2353,10 +2379,14 @@ body {
 }
 
 .date-input {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b9b9b9;
   max-width: 117px;
   padding: 14px;
   margin-top: 8px;
-  color: #000000;
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
   border-radius: 4px;
@@ -2376,6 +2406,11 @@ body {
 }
 
 .telephone-input {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b9b9b9;
   min-width: 287px;
   padding: 14px;
   margin-top: 10px;
@@ -2399,6 +2434,11 @@ body {
 }
 
 .adress-input {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b9b9b9;
   min-width: 420px;
   padding: 14px;
   margin-top: 8px;
@@ -2416,7 +2456,7 @@ body {
   padding: 12px 32px;
   background-clip: padding-box;
   border-radius: 26px;
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -2514,7 +2554,7 @@ body {
 }
 
 .adress-tel {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -2546,7 +2586,7 @@ body {
   padding: 12px 32px;
   background-clip: padding-box;
   border-radius: 26px;
-  font-family: inherit;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
@@ -2610,6 +2650,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   min-height: 104px;
+  padding-bottom: 48px;
 }
 
 /*social list*/
@@ -2624,7 +2665,7 @@ body {
   -ms-flex-pack: start;
   justify-content: flex-start;
   list-style: none;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 2px;
 }
 
@@ -2713,8 +2754,8 @@ body {
   font-weight: 400;
   font-size: 14px;
   color: #2d3440;
-  margin-top: 33px;
-  margin-left: 102px;
+  margin-top: 34px;
+  margin-left: 120px;
 }
 
 .suppliers-item:nth-child(1) {
@@ -2760,13 +2801,17 @@ body {
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 195px;
-  margin-top: 40px;
-  margin-right: 22px;
+  max-width: 200px;
+  margin-top: 43px;
+  margin-right: 15px;
+}
+
+.footer-img {
+  padding-left: 6px;
 }
 
 .footer-copyright {
-  margin-top: 18px;
+  margin-top: 16px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -2798,7 +2843,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 367px;
 }
 
 .breadcrambs {
@@ -3254,7 +3298,7 @@ label:not(:last-child) .title-ingridients {
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding: 8px 52px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -3371,7 +3415,7 @@ label:not(:last-child) .title-ingridients {
   width: 148px;
 }
 
-.popular-product-card-catalog a {
+.popular-product-card-catalog .card-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3384,11 +3428,8 @@ label:not(:last-child) .title-ingridients {
   line-height: 24px;
   text-align: center;
   color: #2d3440;
-  text-decoration: none;
-  padding: 8px 16px;
+  padding: 0;
   border: 2px solid transparent;
-  cursor: default;
-  outline: none;
 }
 
 .card-img-catalog {
@@ -3615,7 +3656,7 @@ label:not(:last-child) .title-ingridients {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -3661,7 +3702,7 @@ label:not(:last-child) .title-ingridients {
   -ms-flex-align: center;
   align-items: center;
   text-decoration: none;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -3721,4 +3762,5 @@ label:not(:last-child) .title-ingridients {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-bottom: 48px;
 }
