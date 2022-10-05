@@ -1066,12 +1066,12 @@ body {
 }
 
 .price {
-  margin-right: 50px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+  min-width: 60px;
 }
 
 .erase-current-product {
@@ -1080,7 +1080,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: auto;
+  margin-left: 32px;
   padding: 0;
   background-color: transparent;
   border: 1px solid transparent;
@@ -1109,6 +1109,13 @@ body {
   opacity: 1;
 }
 
+.ordering {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .buy-current-product {
   display: inline-block;
   color: #fcfcfc;
@@ -1124,7 +1131,6 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  margin-right: 32px;
 }
 
 .buy-current-product:hover {
@@ -1163,6 +1169,8 @@ body {
   background-clip: padding-box;
 }
 
+.price-summ {
+}
 /* main page */
 
 /* slider section*/
@@ -3224,7 +3232,7 @@ body {
   font-size: 14px;
   color: #2d3440;
   margin-bottom: 10px;
-  margin-left: 8px;
+  margin-left: 17px;
 }
 
 .filter-ingridients > .input-group {
