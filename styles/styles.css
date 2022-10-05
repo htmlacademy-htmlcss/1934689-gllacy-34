@@ -3132,7 +3132,7 @@ body {
   border: 1px solid #2d3440;
   border-radius: 50%;
   background: transparent;
-  margin-right: 8px;
+  margin-right: 7px;
   cursor: pointer;
 }
 
@@ -3214,7 +3214,7 @@ body {
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: 21px;
+  margin-right: 19px;
 }
 
 .filter-title {
@@ -3239,7 +3239,7 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 8px 21px 8px 21px;
+  padding: 8px 8px 8px 21px;
   min-width: 604px;
 }
 
@@ -3252,7 +3252,7 @@ body {
 }
 
 label:not(:last-child) .title-ingridients {
-  margin-right: 23px;
+  margin-right: 19px;
 }
 
 .filter-check {
@@ -3262,7 +3262,7 @@ label:not(:last-child) .title-ingridients {
   background: transparent;
   cursor: pointer;
   margin: auto auto;
-  margin-right: 8px;
+  margin-right: 7px;
   border-radius: 2px;
 }
 
@@ -3354,9 +3354,9 @@ label:not(:last-child) .title-ingridients {
   display: grid;
   -ms-grid-columns: 270px 30px 270px 30px 270px 30px 270px;
   grid-template-columns: repeat(4, 270px);
-  gap: 90px 30px;
+  gap: 89px 30px;
   list-style: none;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .popular-title-catalog {
@@ -3430,6 +3430,7 @@ label:not(:last-child) .title-ingridients {
   color: #2d3440;
   padding: 0;
   border: 2px solid transparent;
+  margin-bottom: 6px;
 }
 
 .card-img-catalog {
@@ -3437,9 +3438,8 @@ label:not(:last-child) .title-ingridients {
   -o-object-fit: contain;
   object-fit: contain;
   border-radius: 50%;
-  margin-top: -60px;
-  margin-bottom: -4px;
-  cursor: default;
+  margin-top: -51px;
+  margin-bottom: 14px;
 }
 
 .card-product-description-catalog {
@@ -3450,7 +3450,7 @@ label:not(:last-child) .title-ingridients {
   line-height: 22px;
   text-align: center;
   color: #565c66;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .popular-product-card-catalog:last-child p {
